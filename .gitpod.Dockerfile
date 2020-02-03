@@ -11,6 +11,6 @@ RUN apt-get update && \
 
 USER gitpod
 
-RUN cd /home/gitpod && 
+RUN cd /home/gitpod && \
     wget -qO android_studio.tar.gz https://dl.google.com/dl/android/studio/ide-zips/3.5.3.0/android-studio-ide-191.6010548-linux.tar.gz && \
     tar -xvf android_studio.tar.gz && rm -f android_studio.tar.gz
