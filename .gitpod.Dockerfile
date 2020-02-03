@@ -3,7 +3,7 @@ FROM gitpod/workspace-full-vnc
 USER root
 
 RUN apt-get update --yes && \
-    apt-get install build-essential libc6 libncurses5 libstdc++6 lib32z1 libbz2-1.0 android-tools-adb --no-install-recommends --yes && \
+    apt-get install libc6 libncurses5 libstdc++6 lib32z1 libbz2-1.0 --no-install-recommends --yes && \
     apt-get clean && \
     apt-get -y autoremove && \
     apt-get -y clean && \
