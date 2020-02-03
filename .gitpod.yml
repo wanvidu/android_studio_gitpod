@@ -19,7 +19,7 @@ github:
 # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: true
 tasks:
-  - command: /home/gitpod/android-studio/bin/studio.sh
+  - command: /opt/android-studio/bin/studio.sh
   - command: echo "Hello"
 ports:
   - port: 5900
