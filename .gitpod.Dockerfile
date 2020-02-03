@@ -10,8 +10,6 @@ RUN apt-get update --yes && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
-    
-RUN curl -s https://install.zerotier.com | sudo bash
 
 USER gitpod
 
