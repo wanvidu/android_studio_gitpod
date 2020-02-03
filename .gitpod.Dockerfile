@@ -1,5 +1,7 @@
 FROM gitpod/workspace-full-vnc
 
+ENV PATH=~/Android/Sdk/platform-tools/:$PATH
+
 USER root
 
 RUN apt-get update --yes && \
